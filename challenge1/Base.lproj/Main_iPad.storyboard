@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RNCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJr-bB-dyb">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AJr-bB-dyb" secondAttribute="bottom" id="AV2-uj-pfX"/>
+                            <constraint firstAttribute="bottom" secondItem="AJr-bB-dyb" secondAttribute="bottom" id="ECM-Ic-081"/>
+                            <constraint firstItem="AJr-bB-dyb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="IqY-nl-OIO"/>
+                            <constraint firstAttribute="trailing" secondItem="AJr-bB-dyb" secondAttribute="trailing" id="W8C-XE-4SL"/>
+                            <constraint firstAttribute="trailing" secondItem="AJr-bB-dyb" secondAttribute="trailing" id="XL9-hN-Fst"/>
+                            <constraint firstItem="AJr-bB-dyb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="pzH-db-VIg"/>
+                            <constraint firstItem="AJr-bB-dyb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tCR-G5-QN8"/>
+                            <constraint firstItem="AJr-bB-dyb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vXL-3k-fLq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="AJr-bB-dyb" id="lF9-hP-fCH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
